@@ -2,11 +2,11 @@
 
 function ImageList(props){
 console.log(props);
-const imageHTML = props.images.map(image => <div><li><img style={{width: "100px"}} src={image.image} /></li> <p>{image.text}</p></div>)
+const imageHTML = props.images.map(image => <div style={{display: "flex", justifyContent: "center"}}><li><img style={{width: "200px", height: "250px"}} src={image.url} /> <p>{image.text}</p></li></div>)
     
     return(
         <>
-        <h2>Soccer Players</h2>
+        <h2 style={{display: "flex", justifyContent: "center"}}>Soccer Players</h2>
         <ul>
            {imageHTML}
         </ul>
